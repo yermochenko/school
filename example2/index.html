@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<META charset="UTF-8">
+		<TITLE>Страница</TITLE>
+	</HEAD>
+	<BODY>
+		<DIV id="output">Нахождение объёма цилиндра по радиусу основания и высоте</DIV>
+		<INPUT type="button" value="OK" onclick="Popup();">
+		<SCRIPT type="text/javascript">		
+			var r = parseFloat(prompt("Введите радиус основания цилиндра"));
+			var h = parseFloat(prompt("Введите высоту цилиндра"));
+			var v = Math.PI * r * r * h;
+			var s = "<P>";
+			s += "<EM>Задача</EM>. Радиус основания цилиндра " + r + " м.";
+			s += "Высота цилиндра " + h + " м. Найти объём цилинда.";
+			s += "</P>";
+			s += "<P><EM>Решение</EM>.</P>";
+			s += "<P>1) " + Math.PI + " × " + r + "² × " + h + " = " + v + " (м³) - объём цилинда</P>";
+			s += "<P><EM>Ответ</EM>: " + v + " м³</P>";
+			var e = document.getElementById("output");
+			e.innerHTML = s;
+		</SCRIPT>
+	</BODY>
+</HTML>
