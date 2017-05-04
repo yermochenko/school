@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<META charset="UTF-8">
+		<TITLE>Страница</TITLE>
+		<STYLE type="text/css">
+			H1 {
+				color: green;
+			}
+			FORM {
+				background: yellow;
+				padding: 5px;
+			}
+			EM {
+				font-weight: bold;
+				color: blue;
+			}
+			.math {
+				font-family: "Times New Roman", serif;
+			}
+		</STYLE>
+		<SCRIPT type="text/javascript">
+			function xyz() {
+				var r = parseFloat(document.getElementById("r").value);
+				var h = parseFloat(document.getElementById("h").value);
+				var v = Math.PI * r * r * h;
+				var s = "<P>";
+				s += "<EM>Задача</EM>. Радиус основания цилиндра " + r + " м.";
+				s += "Высота цилиндра " + h + " м. Найти объём цилинда.";
+				s += "</P>";
+				s += "<P><EM>Решение</EM>.</P>";
+				s += "<P>1) <SPAN class=\"math\">π</SPAN> × " + r + "² × " + h + " = " + v + " (м³) - объём цилинда</P>";
+				s += "<P><EM>Ответ</EM>: " + v + " м³</P>";
+				var e = document.getElementById("output");
+				e.innerHTML = s;
+				return false;
+			}
+		</SCRIPT>
+	</HEAD>
+	<BODY>
+		<H1>Вычисление объёма цилиндра</H1>
+		<FORM onsubmit="return xyz()">
+			Введите радиус основания цилиндра: <INPUT type="text" id="r" value="2"><BR>
+			Введите высоту цилиндра: <INPUT type="text" id="h" value="3"><BR>
+			<BUTTON>Вычислить</BUTTON>
+			<BUTTON type="reset">Сбросить</BUTTON>
+		</FORM>
+		<DIV id="output"></DIV>
+	</BODY>
+</HTML>
