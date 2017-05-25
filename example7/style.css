@@ -1,0 +1,106 @@
+body {
+	background: #e5e5e5;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid black;
+}
+
+DIV {
+	width: 90px;
+	height: 105px;
+}
+
+.img1 {
+	background: url("pic1.jpg");
+} 
+
+.img2 {
+	background: url("pic2.jpg");
+} 
+
+.img3 {
+	background: url("pic3.jpg");
+} 
+
+.img4 {
+	background: url("pic4.jpg");
+} 
+
+.img5 {
+	background: url("pic5.jpg");
+} 
+
+.img6 {
+	background: url("pic6.jpg");
+} 
+
+.img7 {
+	background: url("pic7.jpg");
+} 
+
+.img8 {
+	background: url("pic8.jpg");
+} 
+
+.img9 {
+	background: url("pic9.jpg");
+} 
+
+.img10 {
+	background: url("pic10.jpg");
+} 
+
+.img11 {
+	background: url("pic11.jpg");
+} 
+
+.img12 {
+	background: url("pic12.jpg");
+} 
+
+.img13 {
+	background: url("pic13.jpg");
+} 
+
+.img14 {
+	background: url("pic14.jpg");
+} 
+
+.img15 {
+	background: url("pic15.jpg");
+} 
+
+.img16 {
+	background: url("pic16.jpg");
+} 
+
+.img17 {
+	background: url("pic17.jpg");
+} 
+
+.img18 {
+	background: url("pic18.jpg");
+} 
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12, .img13, .img14, .img15, .img16, .img17, .img18 {
+	display: none;
+} 
+
+.closed {
+	background-color: #888888;
+	background-image: none;
+}
+
+.score {
+	float: right;
+	font-size: 20pt;
+}
+#score {
+	color: red;
+	font-weight: bold;
+}
